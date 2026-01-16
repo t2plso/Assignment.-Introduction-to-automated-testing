@@ -2,11 +2,13 @@
   "name": "software-testing-assignment",
   "version": "1.0.0",
   "type": "module",
+  "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
+  "license": "ISC",
   "devDependencies": {
-    "jest": "^29.0.0"
+    "jest": "^30.2.0"
   }
 }
